@@ -14,7 +14,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mt-10">
       <div className="grid grid-cols-1 w-full bg-primary h-[880px] md:grid-cols-2 md:h-[650px] lg:grid-cols-3 lg:h-[690px] xl:grid-cols-3 xl:h-[504px]">
         <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:space-y-4 md:mt-[4rem] lg:justify-start lg:space-y-5 lg:mt-[4rem] xl:justify-start xl:space-y-5 xl:mt-[4rem]">
           <span className="text-sm text-center text-secondary font-semibold font-poppins border-solid border-b-2 py-2 border-[#F9A602]">

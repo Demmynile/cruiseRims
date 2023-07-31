@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 type heroProps = {
   title: string;
@@ -30,34 +31,46 @@ function Hero({ title, subtitle, imageLabel }: heroProps) {
       {isMobile && (
         <div className="w-full h-[395px] bg-black z-10 flex flex-col space-y-9 items-center justify-center">
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              HOME
-            </span>
+            <Link to="/">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                HOME
+              </span>
+            </Link>
           </div>
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              PRODUCTS
-            </span>
+            <Link to="/products">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                PRODUCTS
+              </span>
+            </Link>
           </div>
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              ABOUT
-            </span>
+            <Link to="/about">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                ABOUT
+              </span>
+            </Link>
           </div>
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              CONTACT
-            </span>
+            <Link to="/contact">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                CONTACT
+              </span>
+            </Link>
           </div>
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              CAREER
-            </span>
+            <Link to="/career">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                CAREER
+              </span>
+            </Link>
           </div>
           <div>
-            <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-              BLOG
-            </span>
+            <Link to="/blog">
+              <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                BLOG
+              </span>
+            </Link>
           </div>
         </div>
       )}

@@ -17,6 +17,11 @@ module.exports = {
       },
       backgroundImage: {
         bgHero: "url('./assets/home_hero.png')",
+        bgProduct: "url('./assets/product-hero.png')",
+        bgProductImg1: "url('./assets/product-img1.png')",
+        bgProductImg2: "url('./assets/product-img2.png')",
+        bgProductImg3: "url('./assets/product-img3.png')",
+        bgProductImg4: "url('./assets/product-img4.png')",
       },
       fontFamily: {
         poppins: "Poppins",

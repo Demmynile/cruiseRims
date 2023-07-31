@@ -1,6 +1,7 @@
 import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCancelCircle } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 type NavProps = {
   isMobile: boolean;
@@ -21,37 +22,49 @@ function Navbar({ isMobile, showMobileNavLinks }: NavProps) {
           lg:flex lg:items-center lg:space-x-6 lg:px-12"
       >
         <div>
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            HOME
-          </span>
+          <Link to="/">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              HOME
+            </span>
+          </Link>
         </div>
         <div>
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            PRODUCTS
-          </span>
+          <Link to="/products">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              PRODUCTS
+            </span>
+          </Link>
         </div>
         <div>
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            ABOUT
-          </span>
-        </div>
-        <div>
-          {" "}
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            CONTACT
-          </span>
-        </div>
-        <div>
-          {" "}
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            CAREER
-          </span>
+          <Link to="/about">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              ABOUT
+            </span>
+          </Link>
         </div>
         <div>
           {" "}
-          <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
-            BLOG
-          </span>
+          <Link to="/contact">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              CONTACT
+            </span>
+          </Link>
+        </div>
+        <div>
+          {" "}
+          <Link to="/career">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              CAREER
+            </span>
+          </Link>
+        </div>
+        <div>
+          {" "}
+          <Link to="/blog">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+              BLOG
+            </span>
+          </Link>
         </div>
       </div>
       {!isMobile && (
