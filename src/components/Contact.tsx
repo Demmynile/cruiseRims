@@ -1,10 +1,18 @@
 type ContactProps = {
-  image: string;
+  image?: string;
   title: string;
   subtitle: string;
+  className?: string;
+  children?: any;
 };
 
-const ContactComp = ({ image, title, subtitle }: ContactProps) => {
+const ContactComp = ({
+  image,
+  title,
+  subtitle,
+  className,
+  children = <div></div>,
+}: ContactProps) => {
   return (
     <div
       className="flex flex-col items-center justify-center space-y-8 mt-[9rem] h-auto p-4 w-full
@@ -25,7 +33,9 @@ const ContactComp = ({ image, title, subtitle }: ContactProps) => {
           </span>
         </div>
         <div className="w-[300px] text-center">
-          <span className="text-center text-xs font-poppins">{subtitle}</span>
+          <span className={"text-center text-xs font-poppins"}>
+            <span className={className}>{subtitle}</span>
+          </span>
         </div>
       </div>
     </div>
