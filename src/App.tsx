@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -28,6 +29,9 @@ function App() {
 
         {/* Route for the blog page */}
         <Route path="/blog" element={<Blog />} />
+
+        {/* Route for the blog post*/}
+        <Route path="/blog-post" element={<BlogPost />} />
       </Routes>
     </Router>
   );

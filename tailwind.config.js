@@ -25,6 +25,8 @@ module.exports = {
         bgAbout: "url('./assets/about-us.png')",
         bgContact: "url('./assets/contact-us.png')",
         bgCareer: "url('./assets/careerImg.png')",
+        bgBlog1: "url('./assets/blogFrame.png')",
+        bgBlog2: "url('./assets/blogFrame.png')",
       },
       fontFamily: {
         poppins: "Poppins",

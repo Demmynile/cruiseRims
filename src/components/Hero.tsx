@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 type heroProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   imageLabel: string;
 };
 
