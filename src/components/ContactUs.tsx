@@ -13,7 +13,7 @@ const ContactUs = () => {
           </span>
         </div>
         <div className="text-center">
-          <span className='className="text-center text-white font-extrabold text-xs font-poppins'>
+          <span className='className="text-center text-white font-normal text-xs font-poppins'>
             Have questions or ready to get started on your customized rims? Our
             friendly customer support team is here to assist you. <br /> Get in
             touch with us today by filling out the form and let's embark on this
@@ -60,7 +60,7 @@ const ContactUs = () => {
           <div>
             <TextArea
               placeholder="Your Message"
-              className="outline-none w-[298px] h-[229px]  xl:w-[1149px] xl:h-[229px] lg:w-[857px] lg:h-[229px] lg:mt-[-1.0rem]  font-poppins"
+              className="outline-none w-[298px] h-[229px]  xl:w-[1149px] xl:h-[229px] lg:w-[857px] lg:h-[229px] lg:mt-[-1.0rem] xx:w-[920px]  font-poppins"
               divClassName=""
             />
           </div>

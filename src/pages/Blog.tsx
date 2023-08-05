@@ -19,25 +19,6 @@ const Blog = () => {
             />
           </div>
         </Link>
-        <Link to="/blog-post">
-          <div>
-            <Qualities
-              title="THE ULTIMATE GUIDE TO CAR RIMS"
-              subtitle="As a car enthusiast, you know that rims play a crucial role in transforming the overall look and performance of your vehicle. At Cruiserims, we are passionate about crafting high-quality rims that not only elevate the aesthetics but also enhance the driving experience. In this comprehensive guide, we will delve into the world of car rims, exploring various types and their unique uses. Let's embark on a journey of style, performance, and excellence with Cruiserims."
-              image={blogPost}
-            />
-          </div>
-        </Link>
-
-        <Link to="/blog-post">
-          <div>
-            <Qualities
-              title="THE ULTIMATE GUIDE TO CAR RIMS"
-              subtitle="As a car enthusiast, you know that rims play a crucial role in transforming the overall look and performance of your vehicle. At Cruiserims, we are passionate about crafting high-quality rims that not only elevate the aesthetics but also enhance the driving experience. In this comprehensive guide, we will delve into the world of car rims, exploring various types and their unique uses. Let's embark on a journey of style, performance, and excellence with Cruiserims."
-              image={blogPost}
-            />
-          </div>
-        </Link>
       </div>
 
       {/* Footer */}

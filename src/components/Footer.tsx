@@ -11,30 +11,41 @@ import {
   AiOutlineClockCircle,
 } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-10">
-      <div className="grid grid-cols-1 w-full bg-primary h-[880px] md:grid-cols-2 md:h-[650px] lg:grid-cols-3 lg:h-[690px] xl:grid-cols-3 xl:h-[504px]">
+      <div className="grid grid-cols-1 w-full bg-primary h-[880px] md:grid-cols-2 md:h-[650px] lg:grid-cols-3 lg:h-[350px] xl:grid-cols-3 xl:h-[504px]">
         <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:space-y-4 md:mt-[4rem] lg:justify-start lg:space-y-5 lg:mt-[4rem] xl:justify-start xl:space-y-5 xl:mt-[4rem]">
           <span className="text-sm text-center text-secondary font-semibold font-poppins border-solid border-b-2 py-2 border-[#F9A602]">
             QUICK LINKS
           </span>
-          <span className="text-xs text-white font-bold font-poppins ">
-            HOME
-          </span>
-          <span className="text-xs text-white font-bold font-poppins ">
-            PRODUCTS
-          </span>
-          <span className="text-xs text-white font-bold font-poppins ">
-            ABOUT
-          </span>
-          <span className="text-xs text-white font-bold font-poppins ">
-            CAREER
-          </span>
-          <span className="text-xs text-white font-bold font-poppins ">
-            BLOG
-          </span>
+          <Link to="/">
+            <span className="text-xs text-white font-bold font-poppins ">
+              HOME
+            </span>
+          </Link>
+          <Link to="/products">
+            <span className="text-xs text-white font-bold font-poppins ">
+              PRODUCTS
+            </span>
+          </Link>
+          <Link to="/about">
+            <span className="text-xs text-white font-bold font-poppins ">
+              ABOUT
+            </span>
+          </Link>
+          <Link to="/career">
+            <span className="text-xs text-white font-bold font-poppins ">
+              CAREER
+            </span>
+          </Link>
+          <Link to="/blog">
+            <span className="text-xs text-white font-bold font-poppins ">
+              BLOG
+            </span>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:space-y-4 md:mt-[4rem] lg:justify-start lg:space-y-5 lg:mt-[4rem] xl:justify-start xl:space-y-5 xl:mt-[4rem]">
           <span className="text-sm text-center text-secondary font-semibold font-poppins border-solid border-b-2 py-2 border-[#F9A602]">
@@ -90,22 +101,22 @@ const Footer = () => {
               cruiserims@gmail.com
             </span>
           </div>
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 ml-[-2.4rem]">
             <AiFillPhone
               className="w-[24px] h-[24px] hover:text-tertiary"
               color="white"
             />
             <span className="text-xs text-white font-bold font-poppins ">
-              + 1 *** **** *** ******* **
+              +1 (803) 710‑2357
             </span>
           </div>
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 sm:ml-[4.7rem] md:ml-[6.4rem] lg:ml-[4.9rem] xl:ml-[9.7rem]">
             <HiOutlineLocationMarker
               className="w-[24px] h-[24px] hover:text-tertiary"
               color="white"
             />
             <span className="text-xs text-white font-bold font-poppins">
-              ************************
+              6722 Commerce Street, Springfield , Virginia USA.
             </span>
           </div>
           <div className="flex gap-x-3">

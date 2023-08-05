@@ -53,6 +53,19 @@ const Products = () => {
           imageA={productImage1}
           imageB={productImage2}
           imageC={productImage3}
+          mainDescription="Monoblock
+18 inches Starts at $2,250 Per Wheel
+Size available from 18 inches to 24 inches
+Width available from 8 inches to 13 inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standard"
         />
 
         <ProductsComp
@@ -65,6 +78,21 @@ const Products = () => {
           imageA={productImage4}
           imageB={productImage5}
           imageC={productImage6}
+          mainDescription="Three-piece
+18 inches Starts at $2,360 Per Wheel
+Size available from 18 inches to  
+Width available from 8 inches to 16inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Offered with Exposed, 50/50, or Hidden hardware
+Titanium hardware is available
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standards"
         />
         <ProductsComp
           title="CR G45 00B"
@@ -76,6 +104,21 @@ const Products = () => {
           imageA={productImage7}
           imageB={productImage8}
           imageC={productImage9}
+          mainDescription="Duo Block
+18 inches Starts at $2,100 Per Wheel
+Size available from 18 inches to 24inches
+Width available from 8inches to 16 inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Offered with Exposed, 50/50, or Hidden hardware
+Titanium hardware is available
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standards"
         />
 
         <ProductsComp
@@ -88,6 +131,20 @@ const Products = () => {
           imageA={productImage10}
           imageB={productImage11}
           imageC={productImage12}
+          mainDescription="18 inches Starts at $2,360 Per Wheel
+Size available from 18 inches to 24 inches
+Width available from 8 inches to 16 inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Offered with Exposed, 50/50, or Hidden hardware
+Titanium hardware is available
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standards"
         />
 
         <ProductsComp
@@ -100,6 +157,20 @@ const Products = () => {
           imageA={productImage13}
           imageB={productImage14}
           imageC={productImage15}
+          mainDescription="18 inches Starts at $2,100 Per Wheel
+Size available from 18 inches to 24 inches
+Width available from 8 inches to 16 inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Offered with Exposed, 50/50, or Hidden hardware
+Titanium hardware is available
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standards"
         />
 
         <ProductsComp
@@ -112,6 +183,20 @@ const Products = () => {
           imageA={productImage16}
           imageB={productImage17}
           imageC={productImage18}
+          mainDescription="18 inches Starts at $2,360 Per Wheel
+Size available from 18 inches to 24 inches
+Width available from 8 inches to 16 inches
+Custom Made in USA
+Custom size, PCD, and centre bore
+Center Lock conversion for OE equipped center lock systems
+Each set of wheels are individually designed and machined for each car
+Machined from aerospace-grade forged 6061-T6 aluminum alloy
+Offered with Exposed, 50/50, or Hidden hardware
+Titanium hardware is available
+Lightweight construction with back pocketing as standard to reduce weight
+Max concavity designed for each vehicle's brake clearances
+Custom finishes are available
+FEA tested to VIA, SAE and TUV safety standards"
         />
       </div>
 

@@ -10,7 +10,7 @@ const NewsLetter = () => {
         </span>
       </div>
       <div className="text-center">
-        <span className='className="text-center text-primary font-extrabold text-xs font-poppins'>
+        <span className='className="text-center text-primary font-normal text-xs font-poppins'>
           Become a part of our ever-growing family of satisfied customers and
           elevate your driving experience to new heights. Trust Cruiserims for{" "}
           <br />

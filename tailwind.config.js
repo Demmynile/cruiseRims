@@ -7,6 +7,7 @@ module.exports = {
       sm: "330px",
       md: "768px",
       lg: "1024px",
+      xx: "1200px",
       xl: "1440px",
     },
     extend: {
@@ -27,6 +28,9 @@ module.exports = {
         bgCareer: "url('./assets/careerImg.png')",
         bgBlog1: "url('./assets/blogFrame.png')",
         bgBlog2: "url('./assets/blogFrame.png')",
+        bgSlider1: "url('./assets/carousel1.png')",
+        bgSlider2: "url('./assets/carousel2.png')",
+        bgSlider3: "url('./assets/carousel3.png')",
       },
       fontFamily: {
         poppins: "Poppins",

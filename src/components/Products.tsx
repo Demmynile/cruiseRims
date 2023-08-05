@@ -5,6 +5,7 @@ import ProductDetails from "./ProductDetails";
 type ProductProps = {
   title: string;
   description: string;
+  mainDescription: string;
   imageA: string;
   imageB: string;
   imageC: string;
@@ -13,6 +14,7 @@ type ProductProps = {
 const ProductsComp = ({
   title,
   description,
+  mainDescription,
   imageA,
   imageB,
   imageC,
@@ -30,13 +32,13 @@ const ProductsComp = ({
   return (
     <>
       <div className="flex flex-col gap-y-2 items-center justify-center gap-x-2 w-full md:w-full lg:flex-row xl:flex-row">
-        <div className="sm:justify-center sm:items-center md:justify-center md:items-center sm:gap-y-[1rem] md:gap-y-[4rem] sm:w-full md:w-full bg-primary lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px] flex flex-col justify-start items-start gap-y-[6rem] p-4  ">
+        <div className="sm:justify-center sm:items-center md:justify-center md:items-center sm:gap-y-[1rem] md:gap-y-[4rem] sm:w-full md:w-full bg-primary lg:w-[500px] lg:h-[595px]  xl:w-[500px] xl:h-[595px] flex flex-col justify-start items-start gap-y-[6rem] p-4  ">
           <div className="mt-[6rem]">
             <span className="font-poppins text-secondary font-bold text-md text-left sm:text-center md:text-center ">
               {title}
             </span>
           </div>
-          <div className="mt-[6rem] md:w-[266px] md:h-[170px] sm:w-[266px] sm:h-[170px]">
+          <div className="mt-[6rem] md:w-[266px] md:h-[170px] sm:w-[266px] sm:h-[170px] ml-10">
             <span className="font-poppins text-secondary text-xs text-left sm:text-center md:text-center">
               {description}
             </span>
@@ -81,7 +83,12 @@ const ProductsComp = ({
         closeModal={setProductModalClose}
         title={title}
       >
-        <ProductDetails title={title} subtitle={description} image={imageA} />
+        <ProductDetails
+          title={title}
+          subtitle={description}
+          image={imageA}
+          mainDescription={mainDescription}
+        />
       </CustomModal>
     </>
   );

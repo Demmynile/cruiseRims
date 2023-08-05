@@ -16,7 +16,7 @@ const ShowRoom = () => {
         </div>
 
         <div className=" w-8/12 sm:w-full p-2 text-center">
-          <span className="text-center font-extrabold text-xs font-poppins ">
+          <span className="text-center font-normal text-xs font-poppins ">
             For an up-close and personal experience with our stunning rim
             collection, visit our state-of-the-art showroom. Discover the art of
             automotive elegance and witness firsthand why Cruiserims is the
