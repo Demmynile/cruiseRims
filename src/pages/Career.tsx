@@ -23,7 +23,7 @@ const Career = () => {
         imageLabel="bg-bgCareer"
       />
 
-      <div className="bg-black max-w-7xl mx-auto rounded-md h-[280px] flex flex-col items-center justify-center gap-y-4 mt-4 ">
+      <div className="bg-black max-w-7xl mx-auto rounded-md h-[280px] sm:w-full flex flex-col items-center justify-center gap-y-4 mt-4 ">
         <div>
           <span className="font-montserrat text-xl text-secondary font-extrabold">
             WHY WORK WITH US?
@@ -40,7 +40,7 @@ const Career = () => {
         </div>
       </div>
 
-      <div className="bg-black max-w-7xl mx-auto rounded-md h-[438px] flex flex-col items-center justify-center gap-y-[6rem] mt-4 mb-5 sm:h-[560px]">
+      <div className="bg-black max-w-7xl mx-auto rounded-md h-[438px] sm:w-full flex flex-col items-center justify-center gap-y-[6rem] mt-4 mb-5 sm:h-[560px]">
         <div className="mt-[-7rem] sm:mt-[-20rem] lg:mt-[-4rem] ">
           <span className="font-montserrat text-xl text-secondary font-extrabold">
             OUR VALUES
@@ -93,7 +93,7 @@ const Career = () => {
         </div>
       </div>
 
-      <div className="bg-black max-w-7xl mx-auto rounded-md h-[438px] flex flex-col items-center justify-center gap-y-[6rem] mt-4 mb-5 sm:h-[560px]">
+      <div className="bg-black max-w-7xl mx-auto rounded-md h-[438px] sm:w-full flex flex-col items-center justify-center gap-y-[6rem] mt-4 mb-5 sm:h-[560px]">
         <div className="mt-[-7rem] sm:mt-[-20rem] lg:mt-[-4rem] ">
           <span className="font-montserrat text-xl text-secondary font-extrabold">
             WHAT WE OFFER

@@ -3,7 +3,7 @@ import Input from "./Input";
 
 const NewsLetter = () => {
   return (
-    <div className="flex flex-col space-y-6 items-center justify-center w-full bg-secondary my-11 p-5">
+    <div className="flex flex-col space-y-6 items-center justify-center w-full bg-secondary my-11 p-5 snap-start">
       <div className="text-center">
         <span className="font-extrabold text-2xl text-primary font-poppins text-center">
           JOIN THE CRUISERIMS FAMILY

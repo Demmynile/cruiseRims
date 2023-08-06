@@ -2,7 +2,7 @@ import { images } from "../utils/data";
 
 const Partners = () => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-[3rem] mt-[6rem] mb-5 w-full ">
+    <div className="flex flex-col items-center justify-center space-y-[3rem] mt-[6rem] mb-5 w-full snap-start ">
       {/* Title */}
       <div>
         <span className="font-poppins text-2xl text-primary font-extrabold text-center">

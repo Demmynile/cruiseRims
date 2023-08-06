@@ -7,7 +7,7 @@ type JobProps = {
 
 const Jobs = ({ title, description }: JobProps) => {
   return (
-    <div className="border border-secondary rounded-xl w-[1200px] h-[160px] flex flex-col items-start p-4 justify-start gap-y-2 sm:w-[360px] sm:h-[230px] md:w-[760px] md:h-[290px] xl:w-[1200px] lg:w-[970px]  sm:justify-center sm:items-center">
+    <div className="border border-secondary rounded-xl w-[1200px] h-[160px] flex flex-col items-start p-4 justify-start gap-y-2 sm:w-[310px] sm:h-[230px] md:w-[760px] md:h-[290px] xl:w-[1200px] lg:w-[970px]  sm:justify-center sm:items-center">
       <div className="xl:self-start lg:self-start md:self-start">
         <span className="text-secondary font-bold text-lg font-poppins sm:text-[0.8rem]">
           {title}

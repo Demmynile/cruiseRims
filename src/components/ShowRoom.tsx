@@ -6,7 +6,7 @@ import showrim5 from "../assets/show-rim5.png";
 
 const ShowRoom = () => {
   return (
-    <div>
+    <div className="snap-start">
       {/* Title & subTitle */}
       <div className="flex flex-col items-center justify-center space-y-3 max-w-8xl mx-auto mt-[6rem] xl:w-[1085px] xl:h-auto xl:text-center ">
         <div>
@@ -26,15 +26,15 @@ const ShowRoom = () => {
       </div>
 
       {/* Show Room Gallery */}
-      <div className=" flex flex-col space-y-3 items-center justify-center space-x-1 mt-[4rem] mb-[9rem] py-3 md:flex md:flex-row xl:flex xl:flex-row lg:flex lg:flex-row">
-        <div className="w-4/12  ">
+      <div className="  flex flex-col space-y-3 items-center justify-center space-x-[-1rem] lg:space-x-1 md:space-x-1 mt-[4rem] mb-[9rem] py-3 md:flex md:flex-row xl:flex xl:flex-row lg:flex lg:flex-row">
+        <div className="w-4/12">
           <img
             src={showrim1}
-            className="md:h-[369px] md:mt-4 lg:h-[490px] lg:mt-4 xl:h-[672px] xl:w-[505px]"
+            className=" md:h-[354px] md:mt-4 lg:h-[490px] lg:mt-4 xl:h-[672px] xl:w-[505px]"
             alt=""
           />
         </div>
-        <div className=" w-6/12 flex flex-col items-center justify-center  space-y-3">
+        <div className=" w-6/12 flex flex-col items-center justify-center  space-y-3  p-2">
           <div className="flex flex-col space-y-3 items-center justify-center space-x-3 md:flex md:flex-row md:space-x-3 md:space-y-0 xl:flex xl:flex-row lg:flex lg:flex-row ">
             <div>
               <img src={showrim2} alt="" />

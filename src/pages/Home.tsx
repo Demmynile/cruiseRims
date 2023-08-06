@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="snap-y snap-mandatory">
       {/* Navbar + Hero  Section */}
       <Hero
         title="WELCOME TO CRUSERIMS"
@@ -27,7 +27,7 @@ const Home = () => {
       <CompanyDetails>
         {/* one */}
         <div
-          className="flex flex-col items-center justify-center space-y-8 mt-[9rem] h-auto p-4 w-full
+          className="flex flex-col items-center justify-center space-y-8 mt-[9rem] h-auto p-4 w-full snap-start
          md:flex md:flex-row md:space-x-[3rem] md:mt-[5rem] lg:flex lg:flex-row lg:space-x-[9rem] xl:flex xl:flex-row xl:space-x-[9rem] 
          "
         >

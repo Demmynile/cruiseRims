@@ -5,7 +5,7 @@ import TextArea from "./TextArea";
 
 const ContactUs = () => {
   return (
-    <div className="w-full bg-primary h-[auto] p-7 mt-[5rem]">
+    <div className="w-full bg-primary h-[auto] p-7 mt-[5rem] snap-start">
       <div className="flex flex-col items-center justify-center space-y-3">
         <div>
           <span className="font-extrabold text-2xl text-white font-poppins text-center">

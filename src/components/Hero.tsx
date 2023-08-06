@@ -25,7 +25,7 @@ function Hero({ title, subtitle, imageLabel }: heroProps) {
 
   return (
     <div
-      className={`w-full h-[452px] bg-no-repeat bg-cover object-contain ${imageLabel}`}
+      className={`w-full h-[452px] bg-no-repeat bg-cover object-contain ${imageLabel} snap-start`}
     >
       <Navbar isMobile={isMobile} showMobileNavLinks={showMobileNavLinks} />
 
