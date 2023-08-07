@@ -5,8 +5,13 @@ import productContact1 from "../assets/product-contact.png";
 import productContact2 from "../assets/product-contact2.png";
 import productContact3 from "../assets/product-contact3.png";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       {/* Hero && Navigation */}

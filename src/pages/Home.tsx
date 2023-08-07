@@ -1,4 +1,3 @@
-import Hero from "../components/Hero";
 import rim_one from "../assets/rim_one.png";
 import rim_two from "../assets/rim_two.png";
 import rim_three from "../assets/rim_three.png";
@@ -6,22 +5,233 @@ import rim_four from "../assets/rim_four.png";
 import rim_five from "../assets/rim_five.png";
 import rim_six from "../assets/rim_six.png";
 import rim_seven from "../assets/rim_seven.png";
+import carousel1 from "../assets/carousel1.png";
+import carousel2 from "../assets/carousel2.png";
+import carousel3 from "../assets/carousel3.png";
+import carousel1Mobile from "../assets/carouselMobile1.png";
+import carousel2Mobile from "../assets/carouselMobile2.png";
+import carousel3Mobile from "../assets/carouselMobile3.png";
 import CompanyDetails from "../components/CompanyDetails";
 import Partners from "../components/Partners";
 import ShowRoom from "../components/ShowRoom";
 import ContactUs from "../components/ContactUs";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
+import { useEffect, useState, useCallback } from "react";
+import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+// import { RxDotFilled } from "react-icons/rx";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  // state for the hamburger using the mobile
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  // function that switches the hamburger to the nav links
+  const showMobileNavLinks = useCallback(() => {
+    setIsMobile(!isMobile);
+
+    return () => {
+      setIsMobile(false);
+    };
+  }, [isMobile]);
+
+  const slides = [
+    {
+      url: carousel1,
+    },
+    {
+      url: carousel2,
+    },
+    {
+      url: carousel3,
+    },
+  ];
+
+  const slidesMobile = [
+    {
+      url: carousel1Mobile,
+    },
+    {
+      url: carousel2Mobile,
+    },
+    {
+      url: carousel3Mobile,
+    },
+  ];
+
+  const [currentIndexMobile, setCurrentIndexMobile] = useState(0);
+
+  const prevSlideMobile = () => {
+    const isFirstSlide = currentIndexMobile === 0;
+    const newIndex = isFirstSlide
+      ? slidesMobile.length - 1
+      : currentIndexMobile - 1;
+    setCurrentIndexMobile(newIndex);
+  };
+
+  const nextSlideMobile = () => {
+    const isLastSlide = currentIndexMobile === slidesMobile.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndexMobile + 1;
+    setCurrentIndexMobile(newIndex);
+  };
+
+  // const goToSlideMobile = (slideIndex: number) => {
+  //   setCurrentIndexMobile(slideIndex);
+  // };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  // const goToSlide = (slideIndex: number) => {
+  //   setCurrentIndex(slideIndex);
+  // };
+
   return (
     <div className="snap-y snap-mandatory">
       {/* Navbar + Hero  Section */}
-      <Hero
-        title="WELCOME TO CRUSERIMS"
-        subtitle="YOUR PREMIER RIM MANUFACTURING COMPANY IN THE USA"
-        imageLabel="bg-bgHero"
-      />
+      <div className="w-full h-[452px] relative group">
+        <Navbar isMobile={isMobile} showMobileNavLinks={showMobileNavLinks} />
+        {/* Mobile view navigation links */}
+        {isMobile && (
+          <div className="w-full h-full bg-black z-10 flex flex-col space-y-9 items-center justify-center">
+            <div>
+              <Link to="/">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  HOME
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/products">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  PRODUCTS
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/about">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  ABOUT
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/contact">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  CONTACT
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/career">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  CAREER
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/blog">
+                <span className="text-sm text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+                  BLOG
+                </span>
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {!isMobile && (
+          <div
+            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+            className="w-full h-full bg-center bg-cover duration-500 sm:hidden md:hidden lg:block xl:block "
+          ></div>
+        )}
+        {!isMobile && (
+          <div
+            style={{
+              backgroundImage: `url(${slidesMobile[currentIndexMobile].url})`,
+            }}
+            className="w-full h-full bg-center bg-cover duration-500 sm:block md:block lg:hidden xl:hidden"
+          ></div>
+        )}
+
+        {/* Left Arrow */}
+        {!isMobile && (
+          <div className=" sm:hidden sm:hover:hidden  md:hidden  md:hover:hidden lg:hidden lg:hover:block xl:hidden xl:group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactLeft onClick={prevSlide} size={30} />
+          </div>
+        )}
+        {/* Right Arrow */}
+        {!isMobile && (
+          <div className="sm:hidden sm:hover:hidden  md:hidden  md:hover:hidden lg:hidden lg:hover:block xl:hidden xl:group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+            <BsChevronCompactRight onClick={nextSlide} size={30} />
+          </div>
+        )}
+
+        {/* Left Arrow Mobile*/}
+        {!isMobile && (
+          <div className="hidden group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] left-5 text-2xl xl:rounded-none lg:rounded-none rounded-full  p-2 bg-black/20 text-white lg:text-primary xl:text-primary cursor-pointer lg:bg-transparent xl:bg-transparent lg:cursor-none xl:cursor-none">
+            <BsChevronCompactLeft
+              onClick={prevSlideMobile}
+              size={30}
+              className="sm:block md:block lg:hidden xl:hidden"
+            />
+          </div>
+        )}
+        {/* Right Arrow Mobile*/}
+        {!isMobile && (
+          <div className="hidden group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white xl:rounded-none lg:rounded-none lg:text-primary xl:text-primary cursor-pointer lg:bg-transparent xl:bg-transparent lg:cursor-none xl:cursor-none">
+            <BsChevronCompactRight
+              onClick={nextSlideMobile}
+              size={30}
+              className="sm:block md:block lg:hidden xl:hidden"
+            />
+          </div>
+        )}
+
+        {/* {!isMobile && (
+          <div className="flex top-4 justify-center py-2 sm:hidden md:hidden lg:block xl:block">
+            {slides.map((slide, slideIndex) => (
+              <div
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+                className="text-2xl cursor-pointer"
+              >
+                <RxDotFilled />
+              </div>
+            ))}
+          </div>
+        )} */}
+
+        {/* {!isMobile && (
+          <div className="flex  items-center  justify-center py-2 sm:block md:block lg:hidden xl:hidden">
+            {slidesMobile.map((slide, slideIndex) => (
+              <div
+                key={slideIndex}
+                onClick={() => goToSlideMobile(slideIndex)}
+                className="text-2xl flex text-white cursor-pointer bg-blue-500 self-center"
+              >
+                <RxDotFilled />
+              </div>
+            ))}
+          </div>
+        )} */}
+      </div>
 
       {/* Company Uniqueness */}
       <CompanyDetails>

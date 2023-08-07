@@ -21,8 +21,6 @@ function Hero({ title, subtitle, imageLabel }: heroProps) {
     };
   }, [isMobile]);
 
-  console.log(isMobile);
-
   return (
     <div
       className={`w-full h-[452px] bg-no-repeat bg-cover bg-center ${imageLabel} `}

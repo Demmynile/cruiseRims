@@ -9,6 +9,9 @@ type ProductProps = {
   imageA: string;
   imageB: string;
   imageC: string;
+  imageD: string;
+  imageE: string;
+  imageF: string;
 };
 
 const ProductsComp = ({
@@ -18,6 +21,9 @@ const ProductsComp = ({
   imageA,
   imageB,
   imageC,
+  imageD,
+  imageE,
+  imageF,
 }: ProductProps) => {
   const [openProductModal, setOpenProductModal] = useState(false);
 
@@ -57,24 +63,27 @@ const ProductsComp = ({
         </div>
         <div>
           <img
-            className=" sm:w-[300px] sm:h-[290px]  md:w-[300px] md:h-[290px] lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px] "
+            className=" sm:hidden md:hidden lg:block xl:block lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px] "
             src={imageA}
             alt=""
           />
+          <img className=" lg:hidden xl:hidden" src={imageD} alt="" />
         </div>
         <div>
           <img
-            className="sm:w-[300px] sm:h-[290px]  md:w-[300px] md:h-[290px] lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px]"
+            className="sm:hidden md:hidden lg:block xl:block lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px] "
             src={imageB}
             alt=""
           />
+          <img className=" lg:hidden xl:hidden" src={imageE} alt="" />
         </div>
         <div>
           <img
-            className="sm:w-[300px] sm:h-[290px] md:w-[300px] md:h-[290px]  lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px]"
+            className="sm:hidden md:hidden lg:block xl:block lg:w-[500px] lg:h-[595px] xl:w-[500px] xl:h-[595px]"
             src={imageC}
             alt=""
           />
+          <img className=" lg:hidden xl:hidden" src={imageF} alt="" />
         </div>
       </div>
       {/* Modal Intialization */}

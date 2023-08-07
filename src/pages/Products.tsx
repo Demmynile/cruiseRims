@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Hero from "../components/Hero";
 import ProductsComp from "../components/Products";
 import productImage1 from "../assets/product-img1.png";
@@ -19,6 +19,25 @@ import productImage15 from "../assets/product-img15.png";
 import productImage16 from "../assets/product-img16.png";
 import productImage17 from "../assets/product-img17.png";
 import productImage18 from "../assets/product-img18.png";
+import productImage19 from "../assets/productImage19.png";
+import productImage20 from "../assets/productImage20.png";
+import productImage21 from "../assets/productImage21.png";
+import productImage22 from "../assets/productImage22.png";
+import productImage23 from "../assets/productImage23.png";
+import productImage24 from "../assets/productImage24.png";
+import productImage25 from "../assets/productImage25.png";
+import productImage26 from "../assets/productImage26.png";
+import productImage27 from "../assets/productImage27.png";
+import productImage28 from "../assets/productImage28.png";
+import productImage29 from "../assets/productImage29.png";
+import productImage30 from "../assets/productImage30.png";
+import productImage31 from "../assets/productImage31.png";
+import productImage32 from "../assets/productImage32.png";
+import productImage33 from "../assets/productImage33.png";
+import productImage34 from "../assets/productImage34.png";
+import productImage35 from "../assets/productImage35.png";
+import productImage36 from "../assets/productImage36.png";
+
 import Qualities from "../components/Qualities";
 import qualityImg from "../assets/quality-img1.png";
 import qualityPro2 from "../assets/quality-pro2.png";
@@ -32,6 +51,10 @@ import qualityImg9 from "../assets/quality-img9.png";
 import Footer from "../components/Footer";
 
 const Products = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       {/* Hero && Navbar */}
@@ -53,6 +76,9 @@ const Products = () => {
           imageA={productImage1}
           imageB={productImage2}
           imageC={productImage3}
+          imageD={productImage19}
+          imageE={productImage20}
+          imageF={productImage21}
           mainDescription="Monoblock
 18 inches Starts at $2,250 Per Wheel
 Size available from 18 inches to 24 inches
@@ -78,6 +104,9 @@ FEA tested to VIA, SAE and TUV safety standard"
           imageA={productImage4}
           imageB={productImage5}
           imageC={productImage6}
+          imageD={productImage22}
+          imageE={productImage23}
+          imageF={productImage24}
           mainDescription="Three-piece
 18 inches Starts at $2,360 Per Wheel
 Size available from 18 inches to  
@@ -104,6 +133,9 @@ FEA tested to VIA, SAE and TUV safety standards"
           imageA={productImage7}
           imageB={productImage8}
           imageC={productImage9}
+          imageD={productImage25}
+          imageE={productImage26}
+          imageF={productImage27}
           mainDescription="Duo Block
 18 inches Starts at $2,100 Per Wheel
 Size available from 18 inches to 24inches
@@ -131,6 +163,9 @@ FEA tested to VIA, SAE and TUV safety standards"
           imageA={productImage10}
           imageB={productImage11}
           imageC={productImage12}
+          imageD={productImage28}
+          imageE={productImage29}
+          imageF={productImage30}
           mainDescription="18 inches Starts at $2,360 Per Wheel
 Size available from 18 inches to 24 inches
 Width available from 8 inches to 16 inches
@@ -157,6 +192,9 @@ FEA tested to VIA, SAE and TUV safety standards"
           imageA={productImage13}
           imageB={productImage14}
           imageC={productImage15}
+          imageD={productImage31}
+          imageE={productImage32}
+          imageF={productImage33}
           mainDescription="18 inches Starts at $2,100 Per Wheel
 Size available from 18 inches to 24 inches
 Width available from 8 inches to 16 inches
@@ -183,6 +221,9 @@ FEA tested to VIA, SAE and TUV safety standards"
           imageA={productImage16}
           imageB={productImage17}
           imageC={productImage18}
+          imageD={productImage34}
+          imageE={productImage35}
+          imageF={productImage36}
           mainDescription="18 inches Starts at $2,360 Per Wheel
 Size available from 18 inches to 24 inches
 Width available from 8 inches to 16 inches

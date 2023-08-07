@@ -1,7 +1,12 @@
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import { useEffect } from "react";
 
 const BlogPost = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       <Hero title="CRUISERIMS BLOG" imageLabel="bg-bgBlog1" />

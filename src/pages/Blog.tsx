@@ -3,8 +3,13 @@ import Qualities from "../components/Qualities";
 import blogPost from "../assets/blogPost.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       <Hero title="CRUISERIMS BLOG" imageLabel="bg-bgBlog1" />
