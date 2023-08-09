@@ -45,7 +45,7 @@ function Navbar({ isMobile, showMobileNavLinks }: NavProps) {
         <div>
           {" "}
           <Link to="/contact">
-            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor">
+            <span className="text-xs text-white font-bold font-poppins hover:border-solid hover:border-b-2 hover:border-[#F9A602] hover:p-4 hover:pointer-cursor hover:py-8">
               CONTACT
             </span>
           </Link>
